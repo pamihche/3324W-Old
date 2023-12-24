@@ -760,6 +760,9 @@ void skill_Auton()
   // setDrivePID(-24, 100);
   // setTurnPID(-37);
   // setDrivePID(19, 80);
+
+
+  
   wings.set(true);
   wait(1, sec);
   wings.set(false);
@@ -767,16 +770,13 @@ void skill_Auton()
   setDrivePID(10, 80);
   setTurnPID(-37.125);
   setDrivePID(5.825, 80);
-  //setTurnPID(-34.5);
-  // setTurnPID(90);
-  // // intake.spin(forward, 600, rpm);
-  // // wait(1, sec);
-  // setTurnPID(-90);
-  // setDrivePID(-17, 100);
+
 
   catapult1.spin(forward, CATA_SPEED*120, voltageUnits::mV);
   catapult2.spin(reverse, CATA_SPEED*120, voltageUnits::mV);
+
   wait(2, sec);
+
   catapult1.stop();
   catapult2.stop();
   setDrivePID(-4,200);
