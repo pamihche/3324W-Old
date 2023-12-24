@@ -762,7 +762,7 @@ void skill_Auton()
   // setDrivePID(19, 80);
 
 
-  
+  //opening the wings
   wings.set(true);
   wait(1, sec);
   wings.set(false);
